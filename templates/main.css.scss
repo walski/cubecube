@@ -1,0 +1,62 @@
+@import "compass/reset/utilities";
+
+$pitch: 0.0;
+$yaw:   0.0;
+$roll:  50.0deg;
+$PI: 3.14159;
+
+$bla: sin(1.57)px;
+
+/* CUBE */
+
+.cube, .cube-outer, .cube-inner {
+	transform-style: preserve-3d;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.cube-outer {
+    transform: translate3d(50px, 50px, 0);
+}
+
+.cube-inner {
+    transform: translate3d(0, 0, 50px);
+}
+
+/* FACES */
+
+.cube-face {
+    width: 100px;
+    height: 100px;
+    background-color: #AAA;
+    opacity: 0.7;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.cube-face:nth-child(2) {
+    transform-origin: 0 50%;
+    transform: rotateY(90deg);
+}
+
+.cube-face:nth-child(3) {
+    transform-origin: 100% 50%;
+
+    transform: rotateY(-90deg);
+}
+
+.cube-face:nth-child(4) {
+    transform: translate3d(0, 0, -100px);
+}
+
+.cube-face:nth-child(5) {
+    transform: rotateX(90deg) translate3d(0, -50px, 50px);
+}
+
+.cube-face:nth-child(6) {
+    transform: rotateX(90deg) translate3d(0, -50px, -50px);
+}
