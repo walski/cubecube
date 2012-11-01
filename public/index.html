@@ -7,21 +7,31 @@
   <body>
     <p>
       <label for="pitch">Pitch: </label>
-      <input class="slider" id="pitch" data-control="pitch" type="range"  min="0" max="360" step="1" value="0"/>
+      <input class="slider cube-control" id="pitch" data-control="pitch" type="range"  min="0" max="360" step="1" value="0"/>
     </p>
     <p>
       <label for="yaw">Yaw: </label>
-      <input class="slider" id="yaw" data-control="yaw" type="range"  min="0" max="360" step="1" value="0"/>
+      <input class="slider cube-control" id="yaw" data-control="yaw" type="range"  min="0" max="360" step="1" value="0"/>
     </p>
     <p>
       <label for="roll">Roll: </label>
-      <input class="slider" id="roll" data-control="roll" type="range"  min="0" max="360" step="1" value="0"/>
+      <input class="slider cube-control" id="roll" data-control="roll" type="range"  min="0" max="360" step="1" value="0"/>
     </p>
+    <p>
+      <label for="size">Size: </label>
+      <input class="slider cube-control" id="size" data-control="size" type="range"  min="0" max="500" step="1" value="100"/>
+    </p>
+    <p>
+      <label for="text">Text: </label>
+      <input class="cube-control" data-control="text" type="text" id="text" value="Hello World"/>
+    </p>
+
+
     <div class="viewport">
       <div class="cube-outer">
         <div class="cube">
             <div class="cube-inner">
-              <div class="cube-face"></div>
+              <div class="cube-face">Hello World</div>
               <div class="cube-face"></div>
               <div class="cube-face"></div>
               <div class="cube-face"></div>

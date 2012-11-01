@@ -1,12 +1,5 @@
 @import "compass/reset/utilities";
 
-$pitch: 0.0;
-$yaw:   0.0;
-$roll:  50.0deg;
-$PI: 3.14159;
-
-$bla: sin(1.57)px;
-
 /* CUBE */
 
 .cube, .cube-outer, .cube-inner {
@@ -36,6 +29,7 @@ $bla: sin(1.57)px;
     opacity: 0.7;
     border: 1px solid black;
     position: absolute;
+    overflow: hidden;
 }
 
 .cube-face:nth-child(2) {
